@@ -1,0 +1,231 @@
+* {
+ box-sizing: border-box;
+ font-family: "Raleway", sans-serif;
+ background-color: #232526;
+}
+/* ------------------------------APP COMPONENT------------------ */
+.App {
+ background-color: #232526;
+ color: #e4d08a;
+ font-size: 17px;
+}
+.tittle__app {
+ text-align: center;
+ padding: 2rem;
+ text-decoration: underline;
+}
+/* -------------------NAVBAR COMPONEN------------------------ */
+.navbar__container {
+ padding: 2rem;
+ display: flex;
+}
+.nav__bartittle {
+ color: #dab01c;
+ font-size: 25px;
+ font-weight: 500;
+ cursor: pointer;
+}
+.nav__bartittle:hover {
+ color: #745f13;
+}
+
+.open,
+.close {
+ color: #dab01c;
+ /* border: 1px red solid; */
+}
+.nav-link {
+ color: #dab01c;
+ display: flex;
+ justify-content: flex-end;
+}
+.nav-link:hover {
+ color: #745f13;
+}
+/* ------------------------ SEARCH COMPONENT------------------- */
+.form__searchbar {
+ margin: 2rem;
+ display: flex;
+ justify-content: center;
+}
+.searchbar__input {
+ margin: 0 1rem 0 1rem;
+ border-radius: 10px;
+ border: none;
+ min-width: 40%;
+ padding: 0.5rem;
+ background-color: #dbd3b4;
+ color: black;
+ font-weight: 500;
+}
+.searchbar__input:hover {
+ border: none;
+ box-shadow: 1px 2px #e3d8ae;
+}
+.searchbar__button {
+ background-color: #232526;
+ border-radius: 10px;
+ color: #e3d8ae;
+ border: #e4d08a 1px solid;
+ min-width: 7%;
+ cursor: pointer;
+}
+.searchbar__button:hover {
+ background: #434343;
+}
+
+/*------------------------- CARD COMPONENT -------------------- */
+.cards__container {
+ position: relative;
+ color: #e3d8ae;
+}
+.card {
+ display: flex;
+ flex-direction: column;
+ background-color: #232526;
+ border-radius: 10px;
+
+ border: #796829 solid 1px;
+}
+.content {
+ margin: 0.5rem;
+}
+.img {
+ border-radius: 10px;
+}
+.state_life {
+ position: absolute;
+ top: 10px;
+ right: 5px;
+ font-size: 15px;
+}
+.name__card {
+ font-weight: bold;
+}
+
+/* ---------------------------- FILTER COMPONENT  ------------------------------ */
+
+.filter__container {
+ text-align: center;
+ margin: 1rem 0 2rem 0;
+}
+
+.filter__text {
+ margin-bottom: 0.5rem;
+ font-weight: bolder;
+ font-size: 20px;
+}
+.filter__clear {
+ margin-bottom: 0.5rem;
+ text-decoration: underline;
+ cursor: pointer;
+}
+.filter__clear:hover {
+ color: #dab01c;
+}
+.accordion-button {
+ background-color: #232526;
+ color: #e4d08a;
+}
+
+/*-------------- FILTER COMPONENT: GENDER - SPECIES - STATUS------------------ */
+.accordion-button:not(.collapsed) {
+ color: #e4d08a;
+ background-color: #232526;
+ border: #dab01c 1px solid;
+}
+.accordion-button:focus {
+ border: #dab01c 1px solid;
+}
+.accordion-body:focus {
+ border: #dab01c 1px solid;
+}
+.filters {
+ background-color: #232526;
+ cursor: pointer;
+}
+.filters:hover {
+ color: #dab01c;
+}
+.filter__acordion {
+ border: none;
+}
+
+.acord__body {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 3;
+}
+
+/* -----------------------FILTERBUTTON COMPONENTS---------------------- */
+.filter__button:checked + label{
+  background-color: #dab01c;
+  color: #0a0a0a;
+}
+
+input[type="radio"] {
+  display: none;
+}
+/*  */
+/* ------------------------ BUTTON COMPONENT ---------- */
+.input__check {
+ display: none;
+
+}
+.btn__labelfilter:hover {
+ color: #dab01c;
+ cursor: pointer;
+}
+.btn__labelfilter {
+ border: 1px solid #cfb65c;
+ margin: 0.5rem;
+ color: #e4d08a;
+}
+/* -----------------------LOCATION COMPONENT ------------------- */
+.location__container {
+ color: #e4d08a;
+}
+.location__details {
+ text-align: center;
+ margin: 1rem;
+}
+.location__text {
+ margin-left: 0.5rem;
+}
+.location__search {
+ background-color: #232526;
+}
+/* -------------------------INPUTGROUP COMPONENT------------------ */
+.inputgroup__location {
+ background-color: #232526;
+ color: #dab01c;
+ cursor: pointer;
+}
+/* ---------------------PAGINATION COMPONENT ----------------- */
+.pagination__component {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+
+ margin-top: 2rem;
+}
+.pagination__container {
+ width: 50%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.pagination {
+ color: #dab01c;
+ text-align: center;
+}
+
+.button__b {
+ padding: 2px;
+ border: none;
+}
+.button__b:hover {
+ background-color: #b6a35f;
+ color: #0a0a0a;
+ border: 1px solid #dab01c;
+}
